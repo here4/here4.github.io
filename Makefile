@@ -1,8 +1,8 @@
 
-REMOTE=kfish
+REMOTE=here4
 
 SOURCE=src/Main.elm
-SCRIPT=elm-gamepad-tester.js
+SCRIPT=here4io.js
 TARGET=build/${SCRIPT}
 DEPLOY=scripts/${SCRIPT}
 
@@ -24,7 +24,7 @@ build:
 publish: build
 	git add -f ${DEPLOY}
 	git commit -m "Update ${DEPLOY}"
-	git push --force ${REMOTE} HEAD:gh-pages
+	git push --force ${REMOTE} HEAD:master
 	git reset --hard HEAD^
 
 pull:
