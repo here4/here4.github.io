@@ -1,20 +1,19 @@
-# elm-gamepad Tester
+# here4.github.io
 
-This is a companion app for testing
-[elm-gamepad](https://github.com/kfish/elm-gamepad).
-It shows the values of buttons and sticks of connected controllers.
-
-* [Live demo](http://kfish.github.io/elm-gamepad-tester/)
+This repository contains the source for
+[here4.github.io](http://here4.github.io/),
+usually advertised as
+[www.here4.io](http://www.here4.io/).
 
 ## Build locally
 
-To view it locally, clone this repository and run elm-reactor:
+To view it locally, clone this repository and run make:
 
 ```
-$ git clone https://github.com/kfish/elm-gamepad-tester.git
-$ cd elm-gamepad-tester
+$ git clone https://github.com/here4/here4.github.io.git
+$ cd here4.github.io
 $ elm-install
-# elm-make src/Main.elm --output target/elm.js
+# make
 ```
 
 Then run a web server, such as:
@@ -37,7 +36,8 @@ To build against elm-gamepad you will need to use an unofficial installer like
 
 ## History
 
-This app is inspired by the [HTML5 Gamepad Tester](http://html5gamepad.com/).
+This app is originally based on
+[elm-gamepad-tester](https://github.com/kfish/elm-gamepad-tester).
 
 The code for this app is derived from the
 [elm-mdl Dashboard example](https://github.com/vipentti/elm-mdl-dashboard)
