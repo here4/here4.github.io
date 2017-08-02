@@ -65,8 +65,7 @@ viewHeader model =
         , Color.text <| Color.color Color.Green Color.S500
         ]
         [ Layout.title []
-            [ Html.a [ href "https://github.com/kfish/elm-gamepad" ] [ text "elm-gamepad" ]
-            , text " Tester"
+            [ text "Here4"
             ]
         , Layout.spacer
         , Layout.navigation []
@@ -91,7 +90,7 @@ viewSource model =
         , Button.ripple
         , Button.colored
         , Button.raised
-        , Options.onClick (ViewSourceClick "https://github.com/kfish/elm-gamepad-tester")
+        , Options.onClick (ViewSourceClick "https://github.com/here4/here4.github.io")
         ]
         [ text "View Source" ]
 
