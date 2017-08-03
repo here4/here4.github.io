@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "here4.github.io source",
-    "repository": "https://github.com/here4/here4.github.io.git",
+    "repository": "https://github.com/here4/here4githubio.git",
     "license": "MIT",
     "source-directories": [
         "src"
