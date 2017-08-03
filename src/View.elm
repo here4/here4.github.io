@@ -14,8 +14,6 @@ import Material.Button as Button
 import Material.Options as Options exposing (css, cs, when)
 import Route exposing (Route(..))
 import View.Home
-import View.Legend
-import View.RawData
 import Material.Scheme
 
 
@@ -104,9 +102,7 @@ type alias MenuItem =
 
 menuItems : List MenuItem
 menuItems =
-    [ { text = "Gamepads", iconName = "gamepad", route = Just Home }
-    , { text = "Data", iconName = "code", route = Just RawData }
-    , { text = "Legend", iconName = "map", route = Just Legend }
+    [ { text = "Home", iconName = "gamepad", route = Just Home }
     ]
 
 
@@ -185,12 +181,6 @@ viewBody model =
     case model.history |> List.head |> Maybe.withDefault Nothing of
         Just Route.Home ->
             View.Home.view model
-
-        Just Route.RawData ->
-            View.RawData.view model
-
-        Just Route.Legend ->
-            View.Legend.view model
 
         Nothing ->
             text "404"
