@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
-    "summary": "elm-mdl-dashboard example",
-    "repository": "https://github.com/vipentti/elm-mdl-dashboard.git",
+    "summary": "here4.github.io source",
+    "repository": "https://github.com/here4/here4.github.io.git",
     "license": "MIT",
     "source-directories": [
         "src"
@@ -13,8 +13,7 @@
         "elm-lang/html": "2.0.0 <= v < 3.0.0",
         "elm-lang/navigation": "2.0.1 <= v < 3.0.0",
         "elm-lang/svg": "2.0.0 <= v < 3.0.0",
-        "evancz/url-parser": "2.0.1 <= v < 3.0.0",
-        "kfish/elm-gamepad": "3.4.0 <= v < 4.0.0"
+        "evancz/url-parser": "2.0.1 <= v < 3.0.0"
     },
     "elm-version": "0.18.0 <= v < 0.19.0"
 }

@@ -10,7 +10,6 @@ import Dict
 import Ports
 import Task
 
-import Gamepad
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
@@ -47,11 +46,6 @@ update msg model =
         ViewSourceClick url ->
             model ! [ Ports.windowOpen url ]
 
-        GamepadMsg gamepads ->
-            -- In an actual game you would update your player
-            -- position here, rather than just returning the
-            -- raw gamepad data.
-            ( { model | gamepads = gamepads }, Gamepad.gamepads GamepadMsg )
 
 
 urlUpdate : Model -> Maybe Route -> ( Model, Cmd Msg )

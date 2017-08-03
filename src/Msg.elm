@@ -4,8 +4,6 @@ import Material
 import Material.Snackbar as Snackbar
 import Navigation
 
-import Gamepad
-
 type Msg
     = Mdl (Material.Msg Msg)
     | Snackbar (Snackbar.Msg (Maybe Msg))
@@ -13,4 +11,3 @@ type Msg
     | NewUrl String
     | Toggle (List Int)
     | ViewSourceClick String
-    | GamepadMsg (List Gamepad.Gamepad)
