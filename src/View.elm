@@ -102,7 +102,7 @@ type alias MenuItem =
 
 menuItems : List MenuItem
 menuItems =
-    [ { text = "Home", iconName = "gamepad", route = Just Home }
+    [ { text = "Home", iconName = "public", route = Just Home }
     ]
 
 
