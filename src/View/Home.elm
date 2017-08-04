@@ -12,10 +12,11 @@ view : Model -> Html Msg
 view model =
     grid
         [
-           Color.background <| Color.color Color.Grey Color.S900
+           Color.background <| Color.white
         ]
         [
-            homeCell
+        --  textCell "Create apps"
+        -- , textCell "Put them in worlds"
         ]
 
 textCell : String -> Grid.Cell msg
@@ -25,14 +26,9 @@ textCell str =
         , Elevation.e2
         , Options.css "align-items" "center"
         , Options.cs "mdl-grid"
-        -- , Color.text <| Color.color Color.Green Color.S500
-        , Color.text <| Color.color Color.Grey Color.S200
+        , Color.text <| Color.color Color.Grey Color.S900
         ]
         [
             text str
         ]
-
-homeCell : Grid.Cell msg
-homeCell = textCell
-    "Here4 is a framework for building 3D apps and the worlds they live in."
 
