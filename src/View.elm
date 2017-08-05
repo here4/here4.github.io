@@ -80,6 +80,7 @@ viewSubTitle model =
             [ Html.h4
                 [ style [ outline "#555", spacing "2px" ] ]
                 [ text "A framework for building 3D apps and the worlds they live in." ]
+                -- [ text "Helps you build 3D apps and the worlds they live in." ]
             ]
         ]
 
